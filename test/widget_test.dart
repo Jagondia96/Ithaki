@@ -9,11 +9,12 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ithaki/app.dart';
+import 'package:ithaki/app_config.dart';
 
 void main() {
   testWidgets('Home page smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const MyApp(config: AppConfig.dev));
 
     // Verify that our title is present.
     expect(find.text('Hola Mundo'), findsOneWidget);
