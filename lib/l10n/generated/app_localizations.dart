@@ -109,6 +109,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Itháki Home'**
   String get homeTitle;
+
+  /// No description provided for @cardSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'This is a proof of concept'**
+  String get cardSubtitle;
+
+  /// No description provided for @viewButton.
+  ///
+  /// In en, this message translates to:
+  /// **'View'**
+  String get viewButton;
+
+  /// No description provided for @editButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get editButton;
+
+  /// No description provided for @clickedView.
+  ///
+  /// In en, this message translates to:
+  /// **'You pressed view'**
+  String get clickedView;
+
+  /// No description provided for @clickedEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'You pressed edit'**
+  String get clickedEdit;
 }
 
 class _AppLocalizationsDelegate

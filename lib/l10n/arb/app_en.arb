@@ -1,5 +1,10 @@
 {
     "@@locale": "en",
     "helloWorld": "Hello World",
-    "homeTitle": "Itháki Home"
+    "homeTitle": "Itháki Home",
+    "cardSubtitle": "This is a proof of concept",
+    "viewButton": "View",
+    "editButton": "Edit",
+    "clickedView": "You pressed view",
+    "clickedEdit": "You pressed edit"
 }

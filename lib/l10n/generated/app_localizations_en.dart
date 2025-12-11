@@ -13,4 +13,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeTitle => 'Itháki Home';
+
+  @override
+  String get cardSubtitle => 'This is a proof of concept';
+
+  @override
+  String get viewButton => 'View';
+
+  @override
+  String get editButton => 'Edit';
+
+  @override
+  String get clickedView => 'You pressed view';
+
+  @override
+  String get clickedEdit => 'You pressed edit';
 }
