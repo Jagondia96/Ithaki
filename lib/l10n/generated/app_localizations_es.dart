@@ -15,7 +15,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get homeTitle => 'Inicio Itháki';
 
   @override
-  String get cardSubtitle => 'Esto es una prueba de concepto';
+  String get cardSubtitle =>
+      'Esto es una prueba de concepto con un tamaño de descripcion más largo, debemos definir un tamaño máximo para la descripcion.';
 
   @override
   String get viewButton => 'Ver';

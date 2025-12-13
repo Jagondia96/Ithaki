@@ -7,6 +7,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ithaki/app.dart';
 import 'package:ithaki/app_config.dart';
@@ -28,7 +29,27 @@ void main() {
 
     // Verify that the buttons are present.
     expect(find.text('View'), findsOneWidget);
-    expect(find.text('Edit'), findsOneWidget);
+    // Verify that the like button is present (initially 329).
+    expect(find.text('329'), findsOneWidget);
+    expect(find.byIcon(Icons.favorite_border), findsOneWidget);
+    expect(find.byIcon(Icons.favorite), findsNothing);
+
+    // Tap the 'Like' button and verify the icon change and text increment.
+    await tester.tap(find.text('329'));
+    await tester.pump();
+    expect(find.byIcon(Icons.favorite), findsOneWidget);
+    expect(find.byIcon(Icons.favorite_border), findsNothing);
+    expect(find.text('330'), findsOneWidget);
+
+    // Tap again to toggle back and verify decrement.
+    await tester.tap(find.text('330'));
+    await tester.pump();
+    expect(find.byIcon(Icons.favorite_border), findsOneWidget);
+    expect(find.text('329'), findsOneWidget);
+
+    // Verify that the 'View' button is present with icon.
+    expect(find.text('View'), findsOneWidget);
+    expect(find.byIcon(Icons.visibility), findsOneWidget);
 
     // Tap the 'View' button and verify the alert.
     await tester.tap(find.text('View'));

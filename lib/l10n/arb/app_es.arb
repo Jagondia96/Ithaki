@@ -2,7 +2,7 @@
     "@@locale": "es",
     "helloWorld": "Hola Mundo",
     "homeTitle": "Inicio Itháki",
-    "cardSubtitle": "Esto es una prueba de concepto",
+    "cardSubtitle": "Esto es una prueba de concepto con un tamaño de descripcion más largo, debemos definir un tamaño máximo para la descripcion.",
     "viewButton": "Ver",
     "editButton": "Editar",
     "clickedView": "Has pulsado ver",
